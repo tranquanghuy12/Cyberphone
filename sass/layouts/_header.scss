@@ -1,0 +1,80 @@
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #f5f9fe;
+  box-shadow: 0 2px 4px #e2ebfc;
+  padding: 10px;
+  &__container {
+    @include Responsive(SM) {
+      padding: 0;
+    }
+    .header__nav {
+      a {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $primary-main;
+        &:hover {
+          color: $primary-main;
+        }
+      }
+      .navbar-toggler {
+        border-color: transparent;
+        outline: none;
+        .navbar-toggler-icon {
+          background-image: none;
+          i {
+            font-size: 2.2rem;
+            color: $primary-dark;
+          }
+        }
+      }
+      .header__nav-list {
+        .header__nav-item {
+          padding: 25px;
+          @include Responsive(LG_1) {
+            text-align: center;
+          }
+          a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $primary-dark;
+            &::after {
+              content: "";
+              width: 100%;
+              height: 2px;
+              margin-top: 4px;
+              display: block;
+              background-color: $primary-main;
+              transform: scale(0);
+              transition: all 0.2s;
+            }
+          }
+          &:hover {
+            a {
+              color: $primary-main;
+              text-decoration: none;
+              &::after {
+                transform: scale(1);
+              }
+            }
+          }
+        }
+        .header__nav-item--active {
+          a {
+            color: #2a73dd;
+            &::after {
+              content: "";
+              width: 100%;
+              height: 2px;
+              margin-top: 4px;
+              display: block;
+              background-color: #2a73dd;
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

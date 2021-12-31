@@ -1,0 +1,60 @@
+.btn {
+  padding: 13.5px 44px;
+  border-radius: 8px;
+  letter-spacing: 0.03rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.btn--outlined {
+  background: transparent;
+  padding: 15px 44px;
+  border: 2px solid $primary-main;
+  border-radius: 8px;
+  letter-spacing: 0.03rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: $primary-main;
+  box-shadow: 0 3px 6px #c9d8f4;
+  transition: 0.5s;
+}
+.btn--outlined:hover {
+  background: #2a73dd;
+  border-color: #2a73dd;
+  color: #fff;
+}
+
+.btn--contained {
+  background: linear-gradient(120deg, #60a4f4, $primary-main);
+  padding: 17.5px 46px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.5s;
+}
+.btn--contained:hover {
+  opacity: 0.75;
+  color: white;
+}
+
+.btn--buynow {
+  background: #f5f9fe;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #2a73dd;
+  box-shadow: 2px 2px 4px #e2ebfc, -2px -2px 4px #fff;
+  transition: 0.5s;
+  i {
+    margin-right: 2px;
+  }
+}
+.btn--buynow:hover {
+  box-shadow: inset 1px 1px 3px #e2ebfc, inset -2px -2px 5px #fff;
+}

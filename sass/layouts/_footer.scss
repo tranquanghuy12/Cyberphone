@@ -1,0 +1,31 @@
+footer {
+  //background-image: url("../images/angle-up-light.svg");
+  background-color: $primary-main;
+  .footer {
+    padding: 7rem 2rem;
+    &__left {
+      span {
+        font-size: 1.4rem;
+        color: white;
+        i{
+            font-size: 1.3rem;
+        }
+      }
+    }
+
+    &__right {
+      ul {
+        li {
+          a {
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 600;
+          }
+          a:hover {
+            opacity: 0.75;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.banner {
+  padding: 225px 0px;
+  background-image: url("../images/product-header-bg.jpeg");
+  background-size: cover;
+  background-position: center bottom;
+  @include Responsive(LG_1){
+    padding: 150px 0;
+  }
+  @include Responsive(MD){
+    padding: 150px 0;
+  }
+  @include Responsive(SM){
+    padding: 100px 0;
+  }
+  .banner__container {
+    display: flex;
+    align-items: center;
+    .banner__content {
+      .banner__title {
+        font-size: 7rem;
+        font-weight: 700;
+        color: $primary-main;
+        margin-bottom: 1.5rem;
+        @include Responsive(MD){
+          font-size: 4.4rem;
+        }
+      }
+      .banner__sub-title {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: $primary-dark;
+        margin-bottom: 4rem;
+      }
+      .banner__descriptions {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #656774;
+        margin-bottom: 25px;
+        line-height: 2.2rem;
+      }
+    }
+    .banner__image {
+      img {
+        max-width: 100%;
+        height: auto;
+        // padding-left: 10rem;
+
+        @include Responsive(MD) {
+          display: none;
+        }
+        @include Responsive(LG){
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

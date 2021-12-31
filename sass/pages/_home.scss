@@ -1,0 +1,19 @@
+@import "../layouts/header";
+@import "../layouts/banner";
+@import "../layouts/products";
+@import "../layouts/footer";
+
+.container {
+  @include Responsive(XL) {
+    max-width: 960px;
+  }
+  @include Responsive(LG_1) {
+    max-width: 720px;
+  }
+  @include Responsive(LG) {
+    max-width: 720px;
+  }
+  @include Responsive(MD) {
+    max-width: 540px;
+  }
+}
